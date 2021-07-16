@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson_11</title>
+    <style>
+        /*
+        - block
+            - Take Full width if no width
+            - add line break
+            - respect padding , margin , width , height
+        - inline-block
+            - Allow Elements before and after it
+            - respect padding , margin , width , height
+        - inline
+            - Do Not respect width , height
+            - respect padding and margin [ just left + right ]
+            - do not add line break 
+        */
+        div {
+            background-color: rgb(184, 33, 33);
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 30px;
+        }
+        span {
+            background-color: rgb(184, 33, 33);
+            margin: 20px;
+        }
+        .span-d-inline{
+            background-color: rgb(184, 33, 33);
+            display: inline-block;
+            padding: 50px;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Display Block</h2>
+    <div>Div => Block </div>
+    <div>Div => Block </div>
+    <div>Div => Block </div>
+    <hr />
+    <h2>Display Inline</h2>
+    <span>Div => Inline </span>
+    <span>Div => Inline </span>
+    <span>Div => Inline </span>
+    <hr />
+    <h2>Display Inline-Block</h2>
+    <span class="span-d-inline">Div => Inline-Block </span>
+    <span class="span-d-inline">Div => Inline-Block </span>
+    <span class="span-d-inline">Div => Inline-Block </span>
+</body>
+
+</html>
